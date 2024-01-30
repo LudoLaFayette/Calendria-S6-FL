@@ -1,5 +1,5 @@
 <template>
-
+<heroHome/>
 </template>
 <style scoped>
 </style>
