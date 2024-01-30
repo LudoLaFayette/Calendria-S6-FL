@@ -12,19 +12,18 @@ La connexion et la navigation sur le Site par l’Utilisateur implique acceptati
 réserve des présentes mentions légales.
 Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ».
     </p>
+
+
     <h2>
         ARTICLE 1 - L'EDITEUR
     </h2>
 <p>
-   
-
-
-
 L’édition et la direction de la publication du Site est assurée par Ludovic Faye, domiciliée 7 rue haute,
 89100 Nailly, dont le numéro de téléphone est 0789564952, et l'adresse e-mail
 ludovicfaye89@gmail.com.
 ci-après l'"Editeur".
 </p>
+
 <h2>ARTICLE 2 - L'HEBERGEUR</h2>
 <p>
     L'hébergeur du Site est la société Infomaniak SA, dont le siège social est situé au 26, Avenue de la
