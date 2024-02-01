@@ -7,7 +7,7 @@
 <template>
   <header class="c-header">
     <div class="c-header__logo">
-      <img src="#" alt="Calendria Logo">
+      <img src="/logo.svg" alt="Calendria Logo">
     </div>
     <nav class="c-header__menu">
       <ul>
