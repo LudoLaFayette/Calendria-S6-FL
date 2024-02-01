@@ -6,7 +6,7 @@
 <template>
   <footer class="c-footer">
     <div class="c-footer__column">
-      <img class="c-footer__column--logo" src="/logo.svg" alt="Montre Logo" />
+      <img class="c-footer__column--logo" src="#" alt="Logo Calendria" />
       <myText
         size="p2"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo libero viverra dapibus odio sit malesuada in quis. Arcu tristique elementum viverra integer id."

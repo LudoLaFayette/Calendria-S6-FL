@@ -7,14 +7,14 @@
 <template>
   <header class="c-header">
     <div class="c-header__logo">
-      <img src="/logo.svg" alt="Logo de la maquette S5">
+      <img src="#" alt="Calendria Logo">
     </div>
     <nav class="c-header__menu">
       <ul>
         <li><a href="/">Acceuil</a></li>
-        <li><a href="/customisation">Personaliser</a></li>
+        <li><a href="/customisation">Calendrier</a></li>
         <li><a href="/profil">Profil</a></li>
-        <li><a href="/panier">Panier</a></li>
+        <li><a href="/panier">Contact</a></li>
       </ul>
     </nav>
     <div class="c-header__côté-droite">
