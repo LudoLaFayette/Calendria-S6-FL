@@ -9,7 +9,11 @@
     </div>
 </div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+h2{
+    font-size: 26px;
+    font-weight: 600;
+}
 </style>
 
 <script>
