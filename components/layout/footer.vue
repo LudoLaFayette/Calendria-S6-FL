@@ -12,33 +12,33 @@
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo libero viverra dapibus odio sit malesuada in quis. Arcu tristique elementum viverra integer id."
       />
       <div class="c-footer__column--social_icons">
-        <myIcon name="facebook" background="backgroundBCK" size="small" />
-        <myIcon name="twitter" background="backgroundBCK" size="small" />
-        <myIcon name="linkedin" background="backgroundBCK" size="small" />
-        <myIcon name="instagram" background="backgroundBCK" size="small" />
+        <StylesStyleIcon name="facebook" background="backgroundBCK" size="small" />
+        <StylesStyleIcon name="twitter" background="backgroundBCK" size="small" />
+        <StylesStyleIcon name="linkedin" background="backgroundBCK" size="small" />
+        <StylesStyleIcon name="instagram" background="backgroundBCK" size="small" />
       </div>
     </div>
     <div class="c-footer__column">
-      <myTitle class="c-footer__column--title" content="Horaires" type="h4" />
-      <myText class="c-footer__column--text" size="p1" content="Lundi - Vendredi: 9h00 - 22h00" />
-      <myText class="c-footer__column--text" size="p1" content="Vendredi: 9h00 - 20h00" />
-      <myText class="c-footer__column--text" size="p1" content="Samedi: 9h00 - 17h00" />
+      <StylesStyleTitle class="c-footer__column--title" content="Horaires" type="h4" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="Lundi - Vendredi: 9h00 - 22h00" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="Vendredi: 9h00 - 20h00" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="Samedi: 9h00 - 17h00" />
     </div>
     <div class="c-footer__column">
-      <myTitle class="c-footer__column--title" content="Liens utiles" type="h4" />
+      <StylesStyleTitle class="c-footer__column--title" content="Liens utiles" type="h4" />
       <ul class="c-footer__column--list-link">
         <li class="c-footer__column--text"><a href="#">S'inscrire</a></li>
         <li class="c-footer__column--text"><a href="#">Nous contacter</a></li>
         <li class="c-footer__column--text"><a href="#">Panier</a></li>
         <li class="c-footer__column--text"><a href="#">A propos</a></li>
-        <li class="c-footer__column--text"><a href="#">Conditions générales de vente</a></li>
+        <li class="c-footer__column--text"><a href="#">Conditions générales d'utilisation</a></li>
       </ul>
     </div>
     <div class="c-footer__column">
-      <myTitle class="c-footer__column--title" content="Nous parler" type="h4" />
-      <myText class="c-footer__column--text" size="p1" content="12 rue Emile Zola" />
-      <myText class="c-footer__column--text" size="p1" content="89100 Sens, FR" />
-      <myText class="c-footer__column--text" size="p1" content="01 02 03 04 05" />
+      <StylesStyleTitle class="c-footer__column--title" content="Nous parler" type="h4" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="12 rue Emile Zola" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="89100 Sens, FR" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="01 02 03 04 05" />
       <div class="c-footer__column--input">
         <input type="email" id="email" placeholder="Enter your email...." />
         <myIcon class="" name="chevronRight" size="small" background="backgroundBCK" />

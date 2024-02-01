@@ -5,4 +5,5 @@
 <style scoped>
 </style>
 
-<script></script>
+<script>
+</script>
