@@ -64,13 +64,17 @@
               
               li {
                   a {
-                      color: #007BFF;
+                      color: white;
                       text-decoration: none;
-                      border: 0.25rem solid #007BFF; 
+                      
                       padding: 1rem; 
+                      background-color: #007BFF;
                                           
                       &:hover {
-                          text-decoration: underline;
+                        //   text-decoration: underline;
+                          border: 0.25rem solid #007BFF; 
+                          background-color: white;
+                          color: #007BFF;
                           
                       }
                   }

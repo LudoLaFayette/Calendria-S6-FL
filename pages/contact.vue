@@ -63,7 +63,25 @@ Par extension, le système de contribution se fera sur le long terme en ajoutant
     </form>
 </div>
 </template>
-<style scoped>
+<style lang='scss' scoped>
+h1{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin: 3rem;
+}
+h2{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin: 3rem;
+}
+p{
+    margin: 3rem;
+    text-align: center;
+    font-size: 24px;
+    line-height: 2.5rem;
+}
 </style>
 
 <script></script>
