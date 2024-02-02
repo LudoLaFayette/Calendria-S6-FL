@@ -19,30 +19,30 @@
       </div>
     </div>
     <div class="c-footer__column">
-      <StylesStyleTitle class="c-footer__column--title" content="Horaires" type="h4" />
-      <StylesStyleText class="c-footer__column--text" size="p1" content="Lundi - Vendredi: 9h00 - 22h00" />
-      <StylesStyleText class="c-footer__column--text" size="p1" content="Vendredi: 9h00 - 20h00" />
-      <StylesStyleText class="c-footer__column--text" size="p1" content="Samedi: 9h00 - 17h00" />
+      <StylesStyleTitle class="c-footer__column--title" content="Calendrier" type="h4" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="Année 2024" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="Année 2025" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="Année 2026" />
     </div>
     <div class="c-footer__column">
       <StylesStyleTitle class="c-footer__column--title" content="Liens utiles" type="h4" />
       <ul class="c-footer__column--list-link">
-        <li class="c-footer__column--text"><a href="#">S'inscrire</a></li>
-        <li class="c-footer__column--text"><a href="#">Nous contacter</a></li>
-        <li class="c-footer__column--text"><a href="#">Panier</a></li>
-        <li class="c-footer__column--text"><a href="#">A propos</a></li>
-        <li class="c-footer__column--text"><a href="#">Conditions générales d'utilisation</a></li>
+        <li class="c-footer__column--text"><a href="connexion">S'inscrire</a></li>
+        <li class="c-footer__column--text"><a href="contact">Nous contacter</a></li>
+        <li class="c-footer__column--text"><a href="conditions">CGU</a></li>
+        <li class="c-footer__column--text"><a href="mentions">Mentions légales</a></li>
       </ul>
     </div>
     <div class="c-footer__column">
-      <StylesStyleTitle class="c-footer__column--title" content="Nous parler" type="h4" />
-      <StylesStyleText class="c-footer__column--text" size="p1" content="12 rue Emile Zola" />
-      <StylesStyleText class="c-footer__column--text" size="p1" content="89100 Sens, FR" />
+      <StylesStyleTitle class="c-footer__column--title" content="Webmaster" type="h4" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="Faye Ludovic" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="4, Place Tharradin" />
+      <StylesStyleText class="c-footer__column--text" size="p1" content="25200 Montbéliard, France" />
       <StylesStyleText class="c-footer__column--text" size="p1" content="01 02 03 04 05" />
-      <div class="c-footer__column--input">
+      <!-- <div class="c-footer__column--input">
         <input type="email" id="email" placeholder="Enter your email...." />
-        <myIcon class="" name="chevronRight" size="small" background="backgroundBCK" />
-      </div>
+        <StylesStyleIcon class="" name="chevronRight" size="small" background="backgroundBCK" />
+      </div> -->
     </div>
   </footer>
 </template>
@@ -58,6 +58,10 @@
 
   &__column {
     padding: 1rem;
+    img{
+        height: rem(180);
+        margin-top: rem(20)
+    }
 
     &--logo {
     padding-bottom: rem(15);
@@ -81,6 +85,7 @@
     & li a {
       text-decoration: none;
       color: $grey;
+      font-size: 26px;
     }
   }
   &--input {

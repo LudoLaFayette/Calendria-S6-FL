@@ -32,7 +32,7 @@ const className = computed(() => ({
     font-size: $tiny_font_size;
 
     &.-p1{
-        font-size: $tiny_font_size;  
+        font-size:$normal_font_size;  
         font-weight: 400;
     }
     &.-p2{

@@ -57,3 +57,23 @@
     Tout litige en relation avec l’utilisation du site Calendria est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de France.
 </p>
 </template>
+<style lang='scss' scoped>
+h1{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin: 3rem;
+}
+h2{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin: 3rem;
+}
+p{
+    margin: 3rem;
+    text-align: center;
+    font-size: 24px;
+    line-height: 2.5rem;
+}
+</style>

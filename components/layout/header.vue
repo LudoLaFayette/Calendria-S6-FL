@@ -12,21 +12,21 @@
     <nav class="c-header__menu">
       <ul>
         <li><a href="/">Acceuil</a></li>
-        <li><a href="/customisation">Calendrier</a></li>
+        <li><a href="/calendrier">Calendriers</a></li>
         <li><a href="/profil">Profil</a></li>
-        <li><a href="/panier">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="c-header__côté-droite">
+    <!-- <div class="c-header__côté-droite">
 
         <div class="c-header__côté-droite--Search">
-          <MyIcon name="search" background="noneStyle"  ></MyIcon>
+          <StylesStyleIcon name="search" background="noneStyle"  />
           <input type="search" placeholder="Rechercher...">
         </div>
         <div class="c-header__côté-droite--count" >
-                      1
+                      
         </div>            
-    </div>
+    </div> -->
     
 
   </header>
@@ -41,16 +41,18 @@
       display: flex;
       justify-content: space-between;  
       padding: rem(20) rem(50);  
+      
 
         &__logo{
           img {
-            height: rem(50);
+            height: rem(100);
             width: auto;
         }
         } 
 
 
       &__menu {
+       
           ul {
               display: flex;
               font-size: $normal_font_size;  
@@ -62,11 +64,14 @@
               
               li {
                   a {
-                      color: black;
+                      color: #007BFF;
                       text-decoration: none;
+                      border: 0.25rem solid #007BFF; 
+                      padding: 1rem; 
                                           
                       &:hover {
                           text-decoration: underline;
+                          
                       }
                   }
               }
@@ -80,6 +85,7 @@
             border-radius: rem(10);
             box-shadow: 0px rem(2) rem(10) rgba(0, 0, 0, 0.20);
             padding: rem(5);
+            
             
             input[type="search"] {
                 border: none;
