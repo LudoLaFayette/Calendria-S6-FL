@@ -66,7 +66,7 @@
                   a {
                       color: white;
                       text-decoration: none;
-                      
+                      border-radius: 5%;
                       padding: 1rem; 
                       background-color: #007BFF;
                                           

@@ -168,11 +168,11 @@ const className = computed(() => ({
     }
 
     &.-smallIcon {
-        height: rem(50);
-        width: rem(50);
+        height: rem(80);
+        width: rem(80);
 
         svg {
-            scale: 1.10;
+            scale: 2.25;
         }
     }
 

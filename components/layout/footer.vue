@@ -7,10 +7,10 @@
   <footer class="c-footer">
     <div class="c-footer__column">
       <img class="c-footer__column--logo" src="/logo.svg" alt="Logo Calendria" />
-      <myText
+      <!-- <StylesStyleText
         size="p2"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo libero viverra dapibus odio sit malesuada in quis. Arcu tristique elementum viverra integer id."
-      />
+        content="C'est ici que vous saurez vous cultiver en passant le temps..."
+      /> -->
       <div class="c-footer__column--social_icons">
         <StylesStyleIcon name="facebook" background="backgroundBCK" size="small" />
         <StylesStyleIcon name="twitter" background="backgroundBCK" size="small" />
@@ -55,6 +55,7 @@
   grid-template-columns: repeat(4, 1fr);
   padding: rem(40);
   gap: rem(5);
+  text-align: center;
 
   &__column {
     padding: 1rem;
@@ -70,6 +71,8 @@
     display: flex;
     margin: rem(15) rem(5);
     gap: rem(15);
+    // align-items: center;
+    justify-content: center;
   }
   &--title {
     font-weight: 700;

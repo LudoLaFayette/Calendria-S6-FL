@@ -11,12 +11,18 @@
   },
   "devDependencies": {
     "@nuxtjs/supabase": "^1.1.6",
+    "@samk-dev/nuxt-vcalendar": "^1.0.2",
     "nuxt": "^3.9.3",
     "sass": "^1.70.0",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.10",
+    "@fullcalendar/daygrid": "^6.1.10",
+    "@fullcalendar/interaction": "^6.1.10",
+    "@fullcalendar/timegrid": "^6.1.10",
+    "@fullcalendar/vue3": "^6.1.10",
     "@lbgm/pro-calendar-vue": "^1.1.6"
   }
 }
