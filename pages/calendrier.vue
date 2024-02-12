@@ -1,7 +1,7 @@
 <template>
-    <h2>Calendrier</h2>
+    <h1>Calendrier</h1>
+    <p>Voici le calendrier surlequel vous allez pouvoir participer au jeu de la culture générale mais sous la forme d'un calendrier ! </p>
     <CalendarCalendrier/>
-    <CalendarCalendrierV2/>
 </template>
 <style lang='scss' scoped>
 h1{

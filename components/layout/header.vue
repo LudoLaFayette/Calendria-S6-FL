@@ -7,12 +7,14 @@
 <template>
   <header class="c-header">
     <div class="c-header__logo">
+      <a href="/">
       <img src="/logo.svg" alt="Calendria Logo">
+    </a>
     </div>
     <nav class="c-header__menu">
       <ul>
         <li><a href="/">Acceuil</a></li>
-        <li><a href="/calendrier">Calendriers</a></li>
+        <li><a href="/calendrier">Calendrier</a></li>
         <li><a href="/profil">Profil</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>

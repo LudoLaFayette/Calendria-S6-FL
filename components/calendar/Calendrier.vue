@@ -11,15 +11,21 @@
       <div v-for="(day, index) in weekdayNames" :key="index" :style="weekdayStyles">{{ day.substring(0, 3) }}</div>
     </div>
     <div class="calendar__content" :style="contentStyles" :not="blank">
-      <div v-for="(day, index) in days" :key="index" :class="[day.class]" :style="dayStyles">{{ day.date }}</div>
-    </div>
+      <div  v-for="(day, index) in days" :key="index" :class="[day.class, { 'non-clickable': !day.isClickable }]" :style="dayStyles"  @click="day.isClickable && openSidebar(day)" > {{ day.date }} </div>      
+    </div>    
+    
   </div>
+  <Sidebar v-if="isSidebarVisible" @close="isSidebarVisible = false" :day="selectedDay" />
 </div>
   </template>
   
   <script>
+  import Sidebar from '~/components/menu/sidebar.vue'; // Assurez-vous que le chemin est correct
   export default {
     name: 'Calendar',
+    components: {
+    Sidebar
+  },
     data() {
       return {
         currentYear: new Date().getFullYear(),
@@ -27,8 +33,10 @@
         calendarWidth: 755, // Ajustez selon vos besoins
         colors: ["#16a085", "#1abc9c", "#c0392b", "#27ae60", "#FF6860", "#f39c12", "#f1c40f", "#e67e22", "#2ecc71", "#e74c3c", "#d35400", "#2c3e50"],
         monthNames: ["JANVIER", "FEVRIER", "MARS", "AVRIL", "MAI", "JUIN", "JUILLET", "AOUT", "SEPTEMBRE", "OCTOBRE", "NOVEMBRE", "DECEMBRE"],
-        weekdayNames: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
+        weekdayNames: ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
         days: [],
+        isSidebarVisible: false,
+      selectedDay: null,
       };
     },
     computed: {
@@ -100,7 +108,17 @@
         for (let i = 0; i < daysToAdd; i++) {
             this.days.push({ date: '', class: 'blank' });
         }
+        const today = new Date();
+        this.days.forEach(day => {
+          const dayDate = new Date(this.currentYear, this.currentMonth - 1, day.date);
+          // Logique pour déterminer si le jour est cliquable
+          day.isClickable = dayDate < today; // Simplifié: ajustez selon vos besoins
+        });  
         },
+        openSidebar(day) {
+      this.selectedDay = day;
+      this.isSidebarVisible = true;
+    },
     },
     mounted() {
       this.generateCalendar();
@@ -172,7 +190,7 @@
         
 
       &.blank {
-        background-color: #E8E8E8;
+        background-color: black;
         // border:none;
         &:hover  {
         background-color: black;
@@ -199,6 +217,10 @@
         align-items: center;
         font-weight: bold;
       }
+      &.non-clickable {
+  pointer-events: none;
+  opacity: 0.5;
+}
     }
     
 }

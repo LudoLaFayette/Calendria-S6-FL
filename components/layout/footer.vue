@@ -6,7 +6,7 @@
 <template>
   <footer class="c-footer">
     <div class="c-footer__column">
-      <img class="c-footer__column--logo" src="/logo.svg" alt="Logo Calendria" />
+      <a href="/"><img class="c-footer__column--logo" src="/logo.svg" alt="Logo Calendria" /></a>      
       <!-- <StylesStyleText
         size="p2"
         content="C'est ici que vous saurez vous cultiver en passant le temps..."
@@ -18,12 +18,12 @@
         <StylesStyleIcon name="instagram" background="backgroundBCK" size="small" />
       </div>
     </div>
-    <div class="c-footer__column">
+    <!-- <div class="c-footer__column">
       <StylesStyleTitle class="c-footer__column--title" content="Calendrier" type="h4" />
       <StylesStyleText class="c-footer__column--text" size="p1" content="Année 2024" />
       <StylesStyleText class="c-footer__column--text" size="p1" content="Année 2025" />
       <StylesStyleText class="c-footer__column--text" size="p1" content="Année 2026" />
-    </div>
+    </div> -->
     <div class="c-footer__column">
       <StylesStyleTitle class="c-footer__column--title" content="Liens utiles" type="h4" />
       <ul class="c-footer__column--list-link">
@@ -50,9 +50,9 @@
 .c-footer {
   background: white;
   border-top: 0.1rem solid black;
-  color: $grey;
+  color: #007BFF;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: rem(40);
   gap: rem(5);
   text-align: center;
@@ -87,8 +87,11 @@
     list-style: none;
     & li a {
       text-decoration: none;
-      color: $grey;
+      color: #007BFF;
       font-size: 26px;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
   &--input {

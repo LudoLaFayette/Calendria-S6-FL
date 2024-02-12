@@ -47,12 +47,24 @@
             border-radius: 1.5rem;
             font-size: 45px;
             margin-bottom: 5rem;
-            // color: white;
+            color: white;
             border: white 0.15rem solid;
             // justify-content: center;
+            &:hover{
+                background-color: white;
+                border: black 0.15rem solid;
+                a{
+                    color: #007BFF;
+                }
+                
+            }
             a{
                 text-decoration: none;
                 color: white;
+                // &:hover{
+                //     background-color: white;
+                //     color: #007BFF;
+                // }
             }
         }
     }
