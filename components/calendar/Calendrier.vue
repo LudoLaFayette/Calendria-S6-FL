@@ -220,11 +220,11 @@
       font-size: 1.2em; // Taille de police augmentée pour une meilleure visibilité
     //   border-radius: 0 0 1rem 1rem;
     // border: 0.1px solid black;
-    border-top: 7.5px solid black;
-    border-bottom: 7.5px solid black ;
-    border-left: 0.1px solid black;
-    box-sizing: border-box;
-    font-weight: 600;
+      border-top: 7.5px solid black;
+      border-bottom: 7.5px solid black ;
+      border-left: 0.1px solid black;
+      box-sizing: border-box;
+      font-weight: 600;
 
       &.blank {
         background-color: #E8E8E8;
