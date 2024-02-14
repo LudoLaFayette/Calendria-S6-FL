@@ -1,6 +1,6 @@
 <template>
-    <!-- backgroundColor: currentColor, (sur le header) -->
-<div class="c-calendrier">
+    <Sidebar v-if="isSidebarVisible" @close="isSidebarVisible = false" :day="selectedDay" /><!-- backgroundColor: currentColor, (sur le header) -->
+<div class="c-calendrier">  
   <div class="calendar">
     <div class="calendar__header" :style="{  height: headerHeight + 'px' }"> 
       <StylesStyleIcon name="chevronLeft" size="smallIcon" background="backgroundW" @click="navigate('prev')"/>
@@ -13,9 +13,7 @@
     <div class="calendar__content" :style="contentStyles" :not="blank">
       <div  v-for="(day, index) in days" :key="index" :class="[day.class, { 'non-clickable': !day.isClickable }]" :style="dayStyles"  @click="day.isClickable && openSidebar(day)" > {{ day.date }} </div>      
     </div>    
-    
-  </div>
-  <Sidebar v-if="isSidebarVisible" @close="isSidebarVisible = false" :day="selectedDay" />
+  </div>  
 </div>
   </template>
   

@@ -27,7 +27,7 @@
     <div class="c-footer__column">
       <StylesStyleTitle class="c-footer__column--title" content="Liens utiles" type="h4" />
       <ul class="c-footer__column--list-link">
-        <li class="c-footer__column--text"><a href="connexion">S'inscrire</a></li>
+        <li class="c-footer__column--text"><a href="profil">Votre profil  </a></li>
         <li class="c-footer__column--text"><a href="contact">Nous contacter</a></li>
         <li class="c-footer__column--text"><a href="conditions">CGU</a></li>
         <li class="c-footer__column--text"><a href="mentions">Mentions légales</a></li>

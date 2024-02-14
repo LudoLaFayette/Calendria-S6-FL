@@ -16,7 +16,7 @@
     <h2>Les nouveautés :</h2>
     <div class="m-homepage2">
         <div class="m-homepage2__content2">
-            <p> Les nouveaux calendriers disponibles : <br>
+            <p> Le calendrier disponible : <br>
                 L'an 2024 <br>
                 Prochainement : <br>
                     L'an 2025 <br>

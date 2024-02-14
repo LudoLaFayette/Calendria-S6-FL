@@ -15,7 +15,7 @@
       <ul>
         <li><a href="/">Acceuil</a></li>
         <li><a href="/calendrier">Calendrier</a></li>
-        <li><a href="/profil">Profil</a></li>
+        <li><a href="/profil">S'inscrire</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>

@@ -1,10 +1,25 @@
 <template>
 <h1>Nous contacter</h1>
 
-<h2>qui sommes nous ?</h2>
+<div>
+    <form action="">
+        <p>Veuillez renseignez ces champs pour me contacter pour tout problème :</p>
+        <label for="">Nom</label>
+        <input type="text" name="" id="">
+        <label for="">Prenom</label>
+        <input type="text">
+        <label for=""> Titre du message </label>
+        <input type="text" name="" id="">
+        <label for="">Mesage </label>
+        <input type="text">
+        <button type="submit">Valider</button>
+    </form>
+</div>
+
+<h2>Qui sommes nous ?</h2>
 
 <p>
-    Je suis Ludovic Faye, étudiant de 3ème année de MMI, à L'IUT BM. Je suis en spécialité de développement et voici mon site sur le thème de l'atérité et la culture générale participatif : Calendria
+    Je suis Ludovic Faye, étudiant de 3ème année de MMI, à L'IUT BM. Je suis en spécialité de développement et voici mon site sur le thème de l'altérité et la culture générale participatif : Calendria
 </p>
 <h2>
 
@@ -49,19 +64,7 @@ Mais le jeu de culture générale, avec la bonne modération, peut permettre d�
 Par extension, le système de contribution se fera sur le long terme en ajoutant semaine par semaine cette contribution en explorant multiple thèmes qui seront joués aléatoirement afin de varier les questions proposées sur le site.
 </p>
 
-<div>
-    <form action="">
-        <p>Veuillez renseignez ces champs pour me contacter pour tout problème</p>
-        <label for="">nom</label>
-        <input type="text" name="" id="">
-        <label for="">prenom</label>
-        <input type="text">
-        <label for=""> Titre du message </label>
-        <input type="text" name="" id="">
-        <label for="">Mesage </label>
-        <input type="text">
-    </form>
-</div>
+
 </template>
 <style lang='scss' scoped>
 h1{
@@ -81,6 +84,63 @@ p{
     text-align: center;
     font-size: 24px;
     line-height: 2.5rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #007BFF;
+    box-shadow: 0px 4px 8px 0px rgba(#007BFF, 0.2);
+    border-radius: 8px;
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 5rem;
+
+    p{
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 3rem;
+    }
+
+    label {
+        color: #ffffff;
+        margin: 0.5rem 0;
+    }
+
+    input[type="text"] {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+    }
+    button {
+        padding: 0.5rem 1rem;
+        
+        background-color: #007BFF;
+        
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+        height: 3rem;
+        width: 8rem;
+        font-size: 26px;
+        border: 0.15rem white solid;
+        border-radius: 0.5rem;
+
+        &:hover {
+            // background-color: darken(#ffffff, 10%);
+            background-color: #ffffff;
+            color: #007BFF;
+        }   
+    }
 }
 </style>
 

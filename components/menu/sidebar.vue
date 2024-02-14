@@ -1,36 +1,89 @@
+
+import type { MenuSidebarContent } from '#build/components';
+
+import type sidebarContentVue from './sidebarContent.vue';
 <template>
     <div id="app">
-      <button @click="toggleSidebar">Menu</button>
-      <div class="sidebar" :class="{ active: isSidebarActive }">
-        <button @click="toggleSidebar">Fermer</button>
-        <!-- Contenu du menu latéral -->
-        <div>
-          <p>Catégorie: {{ currentCategory }}</p>
-          <label for="question">Question</label>
-          <input type="text" id="question" v-model="question" placeholder="Entrez votre question">
-          <label for="answer">Réponse</label>
-          <input type="text" id="answer" v-model="answer" placeholder="Entrez votre réponse">
-          <button @click="saveData">Sauvegarder</button>
+        <div class="button-holder">
+            <button @click="toggleSidebar" class="button1">Participer</button>
         </div>
+      
+      <div class="sidebar" :class="{ active: isSidebarActive }">
+        <button @click="toggleSidebar" class="button2">Fermer</button>
+        <!-- Contenu du menu latéral -->
+        <MenuSidebarContent/>
       </div>
     </div>
   </template>
-  <style scoped>
-  .sidebar {
-    position: fixed;
-    left: -250px;
-    width: 250px;
-    height: calc(100% - 60px); /* Header + Footer height */
-    background: lightgrey;
-    transition: left 0.3s ease;
-    padding: 20px;
+  <style scoped lang="scss">
+  .button-holder{
+    display: flex;
+    justify-content: center;
+    .button1{
+            display: grid;
+            height: 100px;
+            width: 300px;
+            border-radius: 1.5rem;
+            font-size: 45px;
+            margin-bottom: 5rem;
+            background-color: #007BFF;
+            border: #007BFF 0.15rem solid;
+            color: white;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover{
+            background-color: white;
+            color: #007BFF;
+            border: #007BFF 0.15rem solid;         
+                
+            }
+            
+        }
   }
-  
+ 
+  .sidebar {
+  position: fixed;
+  top: 0; /* Aligné au haut de la page */
+  left: -370px; /* Démarre hors de l'écran */
+  width: 320px; /* Largeur du menu */
+  height: 100vh; /* Hauteur totale de la vue */
+  background: #007BFF;
+  color: white;
+  transition: left 0.3s ease;
+  padding: 10px 20px;
+  z-index: 1000; /* S'assure que le menu est au-dessus des autres éléments */
+}
+
   .sidebar.active {
     left: 0;
-  }
+
+    .button2{
+           
+            height: 50px;
+            width: 100px;
+            background-color: #007BFF;
+            border-radius: 1.5rem;
+            font-size: 24px;
+            margin-bottom: 5rem;
+            color: white;
+            border: white 0.15rem solid;
+            position: absolute;
+            top: 17.5px;
+            right: 15px; /* Positionne le bouton de fermeture en haut à droite */
+            padding: 10px 10px;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                background-color: white;
+                color: #007BFF;
+                border: white 0.15rem solid;                                
+            }
+            
+        }
+ }
   
-  /* Autres styles nécessaires */
   </style>
 <script>
 export default {
@@ -40,9 +93,12 @@ export default {
       question: '',
       answer: '',
       currentCategory: 'Catégorie Exemple',
+      
     };
   },
+  
   methods: {
+    
     toggleSidebar() {
       this.isSidebarActive = !this.isSidebarActive;
     },
@@ -54,4 +110,14 @@ export default {
   },
 };
 </script>
+<!-- <script setup lang="ts">
+const client = useSupabaseClient()
+
+const { data: categories } = await useAsyncData('categories', async () => {
+  const { data } = await client.from('categories').select('id_categorie, nom_categorie').eq('1', 'Pays').single()
+
+  return data
+})
+console.localStorage(data)
+</script> -->
   
