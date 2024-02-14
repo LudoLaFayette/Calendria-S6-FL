@@ -51,7 +51,7 @@
   align-items: center; /* Centre les éléments horizontalement */
   justify-content: center; /* Centre les éléments verticalement dans leur conteneur */
   height: 100%; /* Utilise toute la hauteur disponible */
-  gap: 20px; /* Espacement entre les éléments */
+  gap: 30px; /* Espacement entre les éléments */
 }
 
 .container {
