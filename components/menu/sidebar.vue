@@ -1,13 +1,8 @@
-
-import type { MenuSidebarContent } from '#build/components';
-
-import type sidebarContentVue from './sidebarContent.vue';
 <template>
     <div id="app">
         <div class="button-holder">
             <button @click="toggleSidebar" class="button1">Participer</button>
-        </div>
-      
+        </div>      
       <div class="sidebar" :class="{ active: isSidebarActive }">
         <button @click="toggleSidebar" class="button2">Fermer</button>
         <!-- Contenu du menu latéral -->
@@ -52,21 +47,21 @@ import type sidebarContentVue from './sidebarContent.vue';
   background: #007BFF;
   color: white;
   transition: left 0.3s ease;
-  padding: 10px 20px;
+  padding: 5px 20px 5px 20px;   
   z-index: 1000; /* S'assure que le menu est au-dessus des autres éléments */
 }
 
   .sidebar.active {
     left: 0;
-
+    overflow-y : auto;
     .button2{
            
-            height: 50px;
-            width: 100px;
+            height: 40px;
+            width: 70px;
             background-color: #007BFF;
             border-radius: 1.5rem;
-            font-size: 24px;
-            margin-bottom: 5rem;
+            font-size: 14px;
+            // margin-bottom: 5rem;
             color: white;
             border: white 0.15rem solid;
             position: absolute;

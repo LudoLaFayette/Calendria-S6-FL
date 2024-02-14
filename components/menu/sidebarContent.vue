@@ -51,7 +51,7 @@
   align-items: center; /* Centre les éléments horizontalement */
   justify-content: center; /* Centre les éléments verticalement dans leur conteneur */
   height: 100%; /* Utilise toute la hauteur disponible */
-  gap: 10px; /* Espacement entre les éléments */
+  gap: 20px; /* Espacement entre les éléments */
 }
 
 .container {
@@ -59,10 +59,11 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width:90%;
+  width:85%;
   max-width: 100%; /* Ajustez la largeur maximale selon vos besoins */
   margin: 15px auto;
-overflow-y: auto; /* Permet le défilement vertical si nécessaire */
+  margin-top : 5rem;
+  margin-bottom : 3rem;
   h2{
     font-weight:600;
     font-size: 32px;
