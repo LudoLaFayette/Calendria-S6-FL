@@ -142,7 +142,7 @@ const className = computed(() => ({
 
 
     &.-backgroundBCK {
-        background-color: $black;
+        background-color: #007BFF;
         color: white;
         svg{
             fill: none;
