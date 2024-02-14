@@ -45,24 +45,24 @@ watch(user, (newValue, oldValue) => {
     <main>
       <section class="container">
         <form @submit.prevent="userRegister" class="form">
-          <h2 class="title">Register</h2>
+          <h2 class="title">S'inscrire</h2>
   
           <div class="input-group">
             <label for="email" class="label">Email</label>
             <input v-model="email" type="email" id="email" name="email" class="input" required />
           </div>
           <div class="input-group">
-            <label for="password" class="label">Password</label>
+            <label for="password" class="label">Mot de passe</label>
             <input v-model="password" type="password" id="password" name="password" class="input" required />
           </div>
           <div class="input-group">
-            <label for="confirmPassword" class="label">Confirm password</label>
+            <label for="confirmPassword" class="label">Confirmation du mot de passe</label>
             <input v-model="confirmPassword" type="password" id="confirmPassword" name="confirmPassword" class="input" required />
           </div>
-          <button type="submit" class="button">Submit</button>
+          <button type="submit" class="button">S'inscrire</button>
           <span class="error-msg" v-if="errorMsg">{{ errorMsg }}</span>
-          <p class="mt-3 text-xs">Do you have an account yet?</p>
-          <nuxt-link class="link-text" to="/login">Login</nuxt-link>
+          <p>Déjà inscrit ?</p>
+          <nuxt-link class="link-text" to="/login">Se connecter</nuxt-link>
         </form>
       </section>
     </main>
@@ -76,11 +76,11 @@ watch(user, (newValue, oldValue) => {
     align-items: center;
     margin: auto;
     padding: 6rem 1.25rem;
-    color: #4B5563; // text-gray-400
+    color: white; // text-gray-400
   }
   
   .form {
-    background-color: rgba(36, 36, 36, 0.5); // bg-[#242424] with opacity
+    background-color: #007BFF; // bg-[#242424] with opacity
     margin-top: 2.5rem;
     width: 100%;
     display: flex;
@@ -100,7 +100,7 @@ watch(user, (newValue, oldValue) => {
     margin-bottom: 1.25rem;
     font-size: 1.125rem;
     font-weight: 500;
-    color: #aac8e4; // text-[#aac8e4]
+    color: white; // text-[#aac8e4]
   }
   
   .input-group {
@@ -111,15 +111,15 @@ watch(user, (newValue, oldValue) => {
   .label {
     font-size: 0.875rem;
     line-height: 1.75;
-    color: #4B5563; // text-gray-400
+    color: white; // text-gray-400
   }
   
   .input {
-    background-color: transparent;
+    background-color: white;
     background-opacity: 20%;
-    width: 100%;
+    width: 90%;
     border-radius: 0.375rem;
-    border: 1px solid #4B5563; // border-gray-600
+    border: 1px solid #007BFF; // border-gray-600
     padding: 0.25rem 0.75rem;
     font-size: 1rem;
     line-height: 2;
@@ -127,21 +127,27 @@ watch(user, (newValue, oldValue) => {
     outline: none;
     transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     &:focus {
-      border-color: #42d392;
+      border-color: black;
       ring: 2px transparent transparent;
     }
   }
   
   .button {
     border-radius: 0.375rem;
-    background-color: #42b883;
+    background-color: #007BFF;
     padding: 0.5rem 2rem;
-    font-family: 'sans-serif';
-    font-weight: bold;
-    color: #213547;
+    // font-family: 'sans-serif';
+    // font-weight: bold;
+    color: white;
     transition: background-color 0.5s;
+    width: 96%;
+    border: 0.15rem solid white;
+    margin-top: 0.7rem;
+    font-size: 24px;
     &:hover {
-      background-color: #42d392;
+      background-color: white;
+      color: #007BFF;
+      
     }
     &:focus {
       outline: none;
@@ -161,10 +167,16 @@ watch(user, (newValue, oldValue) => {
   .link-text {
     margin-top: 0.75rem;
     font-size: 0.875rem;
-    color: #aac8e4;
+    color: white;
+    text-decoration: underline;
     &:hover {
-      color: #42b883;
+      color: white;
+      text-decoration: none;
     }
+  }
+  p{
+    margin-top: 1rem;
+    font-size: 26px;
   }
   </style>
   

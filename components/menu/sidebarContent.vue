@@ -71,7 +71,7 @@
     margin-bottom : 0.5rem;
   }
 }
-@media (max-width: 768px) { /* Pour les tablettes et en dessous */
+@media (max-width: 768px) {
     .form-section, .input-group, .button-action, .button-change {
     width: 100%;
   }
@@ -79,16 +79,16 @@
   .input-group input[type="text"], 
   .input-group textarea, 
   .input-group select {
-    width: 90%; /* Légèrement réduit pour les espaces de marge */
+    width: 90%; 
   }
 }
-@media (max-width: 480px) { /* Pour les téléphones et en dessous */
+@media (max-width: 480px) { 
   .input-group {
     margin: 15px 0;
   }
 
   .button-action, .button-change {
-    font-size: 14px; /* Taille de police ajustée pour les petits écrans */
+    font-size: 14px; 
     padding: 8px 16px;
   }
 }
@@ -160,14 +160,14 @@
     left: 0;
 
     input[type="text"] {
-  width: 80%; /* Ajustez selon la largeur souhaitée */
-  padding: 10px; /* Padding pour un meilleur look */
-  border-radius: 5px; /* Bordures arrondies */
-  border: 1px solid #ccc; /* Bordure subtile */
+  width: 80%; 
+  padding: 10px;  
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
 }
     label {
   text-align: center;
-  width: 100%; /* Assure que le label prend toute la largeur */
+  width: 100%;
 }
     
         .button3{

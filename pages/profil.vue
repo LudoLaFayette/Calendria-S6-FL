@@ -48,7 +48,7 @@ definePageMeta({
 </template>
 <style scoped lang="scss">
 .main {
-  color: #4B5563; /* text-gray-400 */
+  color: #007BFF; /* text-gray-400 */
 }
 
 .section {
@@ -68,8 +68,9 @@ definePageMeta({
   align-items: center;
   justify-content: center;
   border-radius: 9999px; /* rounded-full */
-  background-color: #1F2937; /* bg-gray-800 */
-  color: #4B5563; /* text-gray-600 */
+  background-color: #007BFF; /* bg-gray-800 */
+  color:  #007BFF;
+; /* text-gray-600 */
 }
 
 .img {
@@ -88,32 +89,34 @@ definePageMeta({
   height: 0.25rem; /* h-1 */
   width: 3rem; /* w-12 */
   border-radius: 9999px; /* rounded */
-  background-color: #42b883;
+  background-color: #007BFF;
 }
 
 .email-title {
   font-size: 1.5rem; /* text-2xl */
   font-weight: 700; /* font-bold */
-  color: #aac8e4;
+  color: #007BFF;
 }
 
 .email {
   font-size: 1rem; /* text-base */
-  color: #4B5563; /* text-gray-400 */
+  color: #007BFF; /* text-gray-400 */
 }
 
 .logout-button {
   margin-top: 2rem; /* mt-8 */
   border-radius: 0.375rem; /* rounded-md */
-  background-color: #42b883;
+  background-color: #007BFF;
   padding: 0.5rem 1rem; /* px-4 py-2 */
-  font-family: 'sans-serif';
+  // font-family: 'sans-serif';
   font-weight: 700; /* font-bold */
-  color: #213547;
+  color: white;
   transition: background-color 0.5s; /* duration-500 */
+  margin-bottom: 2rem;
 
   &:hover {
-    background-color: #42d392;
+    background-color: white;
+    color : #007BFF;
   }
 
   &:focus {

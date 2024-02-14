@@ -35,23 +35,23 @@ watchEffect(() => {
     <main>
       <section class="container">
         <form @submit.prevent="userLogin" class="form">
-          <h2 class="title">Login</h2>
+          <h2 class="title">Se connecter</h2>
           <div class="input-group">
             <label for="email" class="label">Email</label>
             <input v-model="email" type="email" id="email" name="email" class="input" required />
           </div>
   
           <div class="input-group">
-            <label for="password" class="label">Password</label>
+            <label for="password" class="label">Mot de passe</label>
             <input id="password" v-model="password" name="password" type="password" class="input" required />
           </div>
   
-          <button class="button">Submit</button>
+          <button class="button">Confirmer</button>
   
           <span class="error-msg" v-if="errorMsg">{{ errorMsg }}</span>
   
-          <p class="mt-3 text-xs">You don't have an account yet?</p>
-          <nuxt-link class="link-text" to="/register">Register</nuxt-link>
+          <p >Pas de compte ?</p>
+          <nuxt-link class="link-text" to="/register">S'inscrire</nuxt-link>
         </form>
       </section>
     </main>
@@ -65,11 +65,11 @@ watchEffect(() => {
   align-items: center;
   margin: auto;
   padding: 6rem 1.25rem;
-  color: #4B5563; /* text-gray-400 */
+  color: white; 
 }
 
 .form {
-  background-color: #242424;
+  background-color: #007BFF;
   background-opacity: 50%;
   margin-top: 2.5rem;
   width: 100%;
@@ -90,7 +90,7 @@ watchEffect(() => {
   margin-bottom: 1.25rem;
   font-size: 1.125rem;
   font-weight: 500;
-  color: #aac8e4; /* text-[#aac8e4] */
+  color: white ; /* text-[#aac8e4] */
 }
 
 .input-group {
@@ -101,15 +101,15 @@ watchEffect(() => {
 .label {
   font-size: 0.875rem;
   line-height: 1.75;
-  color: #4B5563; /* text-gray-400 */
+  color: white; /* text-gray-400 */
 }
 
 .input {
   background-color: transparent;
   background-opacity: 20%;
-  width: 100%;
+  width: 90%;
   border-radius: 0.375rem;
-  border: 1px solid #4B5563; /* border-gray-600 */
+  border: 1px solid white; /* border-gray-600 */
   padding: 0.25rem 0.75rem;
   font-size: 1rem;
   line-height: 2;
@@ -117,7 +117,7 @@ watchEffect(() => {
   outline: none;
   transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   &:focus {
-    border-color: #42b883;
+    border-color: black;
     background-color: transparent;
     ring: 2px transparent transparent;
   }
@@ -126,14 +126,20 @@ watchEffect(() => {
 .button {
   border-radius: 0.375rem;
   border: 0;
-  background-color: #42b883;
+  background-color: #007BFF;
   padding: 0.5rem 2rem;
-  font-family: 'sans-serif';
-  font-weight: bold;
-  color: #213547;
+//   font-family: 'sans-serif';
+//   font-weight: bold;
+font-size: 24px;
+  color: white;
   transition: background-color 0.5s;
+  margin-top: 1rem;
+  width: 95%;
+  border: white 0.15rem solid;
   &:hover {
-    background-color: #42d392;
+    background-color: white;
+    color:  #007BFF;
+    border: white 0.15rem solid;
   }
   &:focus {
     outline: none;
@@ -154,10 +160,16 @@ watchEffect(() => {
 .link-text {
   margin-top: 0.75rem;
   font-size: 0.875rem;
-  color: #aac8e4;
+  color: white;
+  text-decoration: underline;
   &:hover {
-    color: #42b883;
+    color: white;
+    text-decoration: none;
   }
+}
+p{
+    margin-top: 1rem ;
+    font-size: 26px;
 }
 </style>
 
